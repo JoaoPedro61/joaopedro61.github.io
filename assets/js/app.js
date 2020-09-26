@@ -95,7 +95,7 @@ const configs = {
   ],
   talentDescribeFour: [
     'Version Control (Git preferred).',
-    'Controle de Versão (Git prefido).'
+    'Controle de Versão (Git preferido).'
   ],
   talentDescribeFive: [
     'Tracking (GitHub, Jira, Gitlab).',
