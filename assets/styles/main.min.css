@@ -1,0 +1,380 @@
+body {
+  color: #2e2e2e;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif
+}
+
+h1,
+h2,
+h3 {
+  margin: 0
+}
+
+a {
+  color: inherit;
+  text-decoration: none
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+html.landing,
+.landing body {
+  height: 100%
+}
+
+.landing body {
+  color: #fff;
+  background-color: #212121
+}
+
+.landing main {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.landing section {
+  height: 60%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding: 3rem
+}
+
+.landing h1 {
+  margin: .5em 0
+}
+
+.landing a:hover {
+  color: #f50057
+}
+
+.landing .badge {
+  flex-direction: column;
+  align-items: flex-end;
+  border-right: 1px solid #fff
+}
+
+.landing .badge img {
+  flex-shrink: 0;
+  border-radius: 256px
+}
+
+.landing .badge .side-resume {
+  font-size: 1.125em;
+  font-weight: 700;
+  text-align: right
+}
+
+.landing .badge .badge a {
+  display: inline-block;
+  padding-left: .5rem
+}
+
+.landing .badge .badge a::before {
+  font-weight: 400
+}
+
+.landing .badge .pages {
+  font-size: 1.5em;
+  font-weight: 700
+}
+
+.landing .profiles {
+  padding: 0 4rem
+}
+
+.landing .profiles a {
+  padding: 1rem;
+  font-size: 2rem
+}
+
+@media screen and (max-width:750px) {
+  .landing main {
+      flex-direction: column
+  }
+  .landing section {
+      width: inherit
+  }
+  .landing .badge {
+      flex-direction: column;
+      align-items: center;
+      border-right: none
+  }
+  .landing .badge .side-resume {
+      text-align: center
+  }
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url(/assets/fonts/social.woff) format('woff');
+  unicode-range: U+2709, U+1f4de, U+e900, U+e901, U+1f426, U+1f47d, U+1f511
+}
+
+.keybase:before {
+  content: "\1f511"
+}
+
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+
+a.symbol:before {
+  content: attr(title);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
+
+.linkedin:before {
+  content: "\f0e1";
+}
+
+.github:before {
+  content: "\e900"
+}
+
+.resume .github:before {
+  padding: 0 .375rem
+}
+
+.phone:before {
+  content: "\1f4de";
+  padding: 0 .375rem
+}
+
+.email:before {
+  padding: 0 .375rem
+}
+
+.resume body {
+  padding: 0 5%
+}
+
+.resume h1 {
+  font-size: 2.5rem
+}
+
+.resume h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: .1875rem;
+  text-transform: uppercase
+}
+
+.resume h3 {
+  font-size: 1rem;
+  font-weight: 600
+}
+
+.resume main {
+  font-size: .875rem
+}
+
+.resume .dates {
+  font-size: .8125rem
+}
+
+.resume header {
+  display: flex;
+  padding: 2.125rem 0;
+  border-bottom: 2px solid #d8d8d8
+}
+
+.resume .badge h1 {
+  line-height: 1;
+  word-spacing: 100vw
+}
+
+.resume .badge div {
+  margin-top: 1em;
+  font-size: 1.125rem
+}
+
+.resume .side-resume {
+  flex-shrink: 0;
+  text-align: right
+}
+
+.resume .side-resume .switch {
+  top: 10px;
+}
+
+label.switch input[type=checkbox] {
+  display:none
+ }
+ label.switch input[type=checkbox]:checked+span:before {
+  background-color:rgba(29,161,235,.5)
+ }
+ label.switch input[type=checkbox]:checked+span:after {
+  background-color:#1da1eb;
+  transform:translate(80%,-50%)
+ }
+ label.switch input[type=checkbox]+span {
+  position:relative;
+  cursor:pointer;
+  font-weight:500;
+  text-align:right;
+  margin:0;
+  padding:0 0 0 44px
+ }
+ label.switch input[type=checkbox]+span:after,
+ label.switch input[type=checkbox]+span:before {
+  content:"";
+  cursor:pointer;
+  position:absolute;
+  margin:0;
+  outline:0;
+  top:50%;
+  transform:translateY(-50%);
+  transition:all .2s ease-out
+ }
+ label.switch input[type=checkbox]+span:before {
+  left:1px;
+  width:34px;
+  height:14px;
+  background-color:rgba(29,161,235,.5);
+  border-radius:8px
+ }
+ label.switch input[type=checkbox]+span:after {
+  left:0;
+  width:20px;
+  height:20px;
+  background-color:#1da1eb;
+  border-radius:50%;
+  box-shadow:0 3px 1px -2px rgba(0,0,0,.3),0 2px 2px 0 rgba(0,0,0,.098),0 1px 5px 0 rgba(0,0,0,.084)
+ }
+ label.switch input[type=checkbox]:checked+span label.switch input[type=checkbox]:after {
+  transform:translate(80%,-50%)
+ }
+
+.resume .badge a {
+  display: block
+}
+
+.resume main {
+  display: flex
+}
+
+.resume main .primary {
+  padding-right: 2.375rem;
+  width: 100%
+}
+
+.resume section {
+  padding: 2.375rem 0;
+  border-top: 1px solid #d8d8d8
+}
+
+.resume section:first-child {
+  border-top: none
+}
+
+.resume h2 {
+  margin-bottom: 1.6875rem
+}
+
+.resume section>ul>li {
+  margin: 1.6875rem 0
+}
+
+.resume section>ul>li:last-child {
+  margin-bottom: 0
+}
+
+.resume section h2:after {
+  display: block;
+  margin-top: .5rem;
+  height: .25rem;
+  width: 2.375rem;
+  background-color: #000;
+  content: ""
+}
+
+.resume section h3 {
+  display: inline-block;
+  margin-bottom: .5625rem
+}
+
+.resume section .dates {
+  margin-bottom: .65625rem
+}
+
+.resume section .description {
+  color: #5d5d5d
+}
+
+.resume .primary .description ul,
+.list {
+  margin: .375rem 0;
+  padding-left: 2rem;
+  list-style: initial
+}
+
+@media print {
+  @page {
+      size: 210mm 297mm;
+      margin: .5in
+  }
+  .resume body {
+      padding: 0
+  }
+  .resume header {
+      padding-top: 0
+  }
+  .resume {
+      font-size: 12px
+  }
+  .resume,
+  .resume .dates,
+  .resume section .description {
+      color: #000!important
+  }
+  .no-print {
+    display:none;
+  }
+}
+
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('MonoSocialIconsFont-1.10.eot');
+  src: url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+       url('/assets/fonts/social.woff') format('woff'),
+       url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.symbol, a.symbol:before {
+  font-family: 'Mono Social Icons Font';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+a.symbol:before {
+  content: attr(icon);
+  margin-right: 0.3em;
+  font-size: 130%;
+}
