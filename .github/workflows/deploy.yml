@@ -25,4 +25,4 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - run: npm run ng -- deploy joaopedro61-github-io --base-href=/joaopedro61.github.io/ --name=JoaoPedro61 --email=mjoaopedro61@gmail.com --no-silent --repo=https://JoaoPedro61:${{ secrets.GITHUB_TOKEN }}@github.com/JoaoPedro61/joaopedro61.github.io.git
+    - run: npm run ng -- deploy joaopedro61-github-io --base-href=/ --name=JoaoPedro61 --email=mjoaopedro61@gmail.com --no-silent --repo=https://JoaoPedro61:${{ secrets.GITHUB_TOKEN }}@github.com/JoaoPedro61/joaopedro61.github.io.git
