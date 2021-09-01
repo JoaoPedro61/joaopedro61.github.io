@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng deploy joaopedro61-github-io --base-href=/joaopedro61.github.io/"
   },
   "private": true,
   "dependencies": {
