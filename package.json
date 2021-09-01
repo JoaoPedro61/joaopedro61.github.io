@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy joaopedro61-github-io --base-href=/joaopedro61.github.io/"
+    "deploy": "ng deploy joaopedro61-github-io --base-href=/joaopedro61.github.io/ --name=\"JoaoPedro61\" --email=\"mjoaopedro61@gmail.com\" --no-silent"
   },
   "private": true,
   "dependencies": {
