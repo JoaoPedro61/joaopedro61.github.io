@@ -27,4 +27,6 @@ jobs:
       env:
         NODE_AUTH_TOKEN: ${{ secrets.DEPLOY_PERSONAL_WEBSITE }}
         GITHUB_TOKEN: ${{ secrets.DEPLOY_PERSONAL_WEBSITE }}
-    - run: npm run deploy
+    - run: |
+      npm install
+      npm run deploy
