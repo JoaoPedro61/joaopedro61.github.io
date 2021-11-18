@@ -1,0 +1,72 @@
+{{#each releases}}
+  ##
+  {{title}}
+  [{{isoDate}}]
+
+  {{#commit-list
+    commits
+    heading="### New Features"
+    message="(feat: )|(feature: )|(Feature: )"
+    exclude="(fix: )|(Fix: )|(break: )|(Break: )|(devops: )|(Devops: )|(docs: )|(Docs: )|(improvement: )|(Improvement: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+  {{#commit-list
+    commits
+    heading="### Improvement"
+    message="(improvement: )|(Improvement: )"
+    exclude="(feature: )|(Feature: )|(fix: )|(Fix: )|(break: )|(Break: )|(devops: )|(Devops: )|(docs: )|(Docs: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+  {{#commit-list
+    commits
+    heading="### Fix"
+    message="(fix: )|(Fix: )"
+    exclude="(break: )|(Break: )|(feat: )|(feature: )|(Feature: )|(devops: )|(Devops: )|(docs: )|(Docs: )|(improvement: )|(Improvement: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+  {{#commit-list
+    commits
+    heading="### Break compatibility"
+    message="(break: )|(Break: )"
+    exclude="(fix: )|(Fix: )|(feat: )|(feature: )|(Feature: )|(devops: )|(Devops: )|(docs: )|(Docs: )|(improvement: )|(Improvement: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+  {{#commit-list
+    commits
+    heading="### DevOps"
+    message="(devops: )|(Devops: )"
+    exclude="(break: )|(Break: )|(fix: )|(Fix: )|(feat: )|(feature: )|(Feature: )|(docs: )|(Docs: )|(improvement: )|(Improvement: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+  {{#commit-list
+    commits
+    heading="### Documentation"
+    message="(docs: )|(Docs: )"
+    exclude="(break: )|(Break: )|(fix: )|(Fix: )|(feat: )|(feature: )|(Feature: )|(devops: )|(Devops: )|(improvement: )|(Improvement: )"
+  }}
+    *
+    {{subject}}
+    ([`{{shorthash}}`]({{href}}))
+  {{/commit-list}}
+
+{{/each}}
